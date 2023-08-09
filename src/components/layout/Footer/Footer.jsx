@@ -1,5 +1,6 @@
 import {
   FacebookIcon,
+  FlixTVLogo,
   InstagramIcon,
   TikTokIcon,
   UpArrowIcon,
@@ -9,8 +10,8 @@ import {
 
 export const FooterLogoLang = () => {
   return (
-    <div className="flex items-center md:space-x-10">
-      <span className="text-mainGreen font-bold text-xl w-full text-center">LOGO</span>
+    <div className="flex items-center space-x-10 ">
+      <FlixTVLogo className="w-56" />
       <button className="w-full bg-lightGray md:bg-neutral-800 py-2 rounded-lg flex items-center space-x-10 md:space-x-5 px-3 ">
         <UsaFlagIcon />
         <span className="text-neutral-400 md:text-sm">English</span>

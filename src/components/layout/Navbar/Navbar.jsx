@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { MenuIcon, CloseIcon } from "../../common/Icons/Icons";
+import { MenuIcon, CloseIcon, FlixTVLogo, FlixTVLogoSm } from "../../common/Icons/Icons";
 import { FooterCopyright, FooterLogoLang } from "../Footer/Footer";
 import { NavMenu } from "../../common/Nav/NavMenu";
 import { ProfileBox } from "../../common/Nav/ProfileBox";
@@ -23,7 +23,8 @@ export const Navbar = () => {
   return (
     <header className="md:absolute top-0 w-full">
       <nav className="flex flex-row justify-between items-center px-5 md:px-10 py-10 md:py-5 bg-transparent">
-        <span className="text-mainGreen font-bold text-xl">LOGO</span>
+        <FlixTVLogo className="hidden md:block" />
+        <FlixTVLogoSm className="md:hidden" />
         <div className="hidden md:flex flex-row space-x-5 [&>*]:text-sm items-center [&>*]:cursor-pointer">
           {menuItems.map((item) => {
             return (

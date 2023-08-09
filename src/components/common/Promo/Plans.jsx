@@ -60,7 +60,7 @@ const Platinum = () => {
             Video quality <span className="font-semibold">Ultra HD 4k</span>
           </TickList>
         </ul>
-        <ul className="text-sm space-y-1 md:space-y-5 md:border-0 border-b border-neutral-100/50 pb-3 ">
+        <ul className="text-sm space-y-1 md:space-y-5 md:border-0 border-b border-neutral-100/50 pb-3 pt-2 md:pt-0">
           <TickList>
             Up to <span className="font-semibold">5 accounts online</span> at the sime time
           </TickList>
