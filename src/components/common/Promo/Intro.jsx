@@ -4,9 +4,9 @@ import { ButtonWhite } from "../Button";
 
 export const Intro = () => {
   return (
-    <div className="md:min-h-screen flex flex-col md:flex-row md:justify-center md:items-center">
+    <div className="md:min-h-screen flex flex-col lg:flex-row md:justify-center md:items-center md:mt-10 lg:mt-0">
       <SliderMovies />
-      <div className="flex flex-col space-y-3 md:space-y-5 py-5 mt-5 md:order-first md:w-[75%]">
+      <div className="flex flex-col space-y-3 md:space-y-5 py-5 mt-5 lg:order-first md:w-[75%]">
         <h1 className="text-xl md:text-2xl">
           Escape
           <span className="border border-neutral-50 rounded-full py-1 px-3 mx-2 relative -top-3">

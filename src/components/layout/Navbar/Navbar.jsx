@@ -11,6 +11,12 @@ export const Navbar = () => {
 
   const toggleNagvar = () => {
     setIsOpen(!isOpen);
+
+    if (!isOpen) {
+      document.body.style.overflow = "hidden";
+    } else {
+      document.body.style.overflow = "unset";
+    }
   };
 
   const menuItems = ["Home", "Series", "Cinema", "TV Shows", "News"];

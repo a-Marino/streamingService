@@ -29,7 +29,7 @@ export const SliderMovies = () => {
         </div>
       </div>
       {/* /OTHER MOVIES/ */}
-      <div className="h-60 md:h-96 w-20 md:w-32 rounded-2xl relative md:order-first md:pr-2 shadow-md">
+      <div className="h-60 md:h-96 w-20 md:w-32 rounded-2xl relative lg:order-first md:pr-2 shadow-md">
         <img
           src="https://res.cloudinary.com/dv8nczwtj/image/upload/v1691514608/Streaming%20Service/4975722_zvbwnv.webp"
           alt="Poster of a Movie"

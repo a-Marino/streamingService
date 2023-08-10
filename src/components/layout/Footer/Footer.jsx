@@ -64,7 +64,7 @@ export const FooterNews = () => {
 export const Footer = () => {
   return (
     <footer className="mb-5 md:bg-lightGray md:px-2 md:py-8 md:mx-5 md:rounded-xl">
-      <div className="flex flex-col md:flex-row md:space-x-24 mx-5 space-y-5 mb-5 border-b border-neutral-800 pb-5">
+      <div className="flex flex-col lg:flex-row lg:space-x-24 mx-5 space-y-5 mb-5 border-b border-neutral-800 pb-5">
         <div className="md:flex flex-col">
           <FooterLogoLang />
           <div className="flex flex-col mt-4">
@@ -80,7 +80,7 @@ export const Footer = () => {
           </div>
         </div>
         {/* MENU NAV */}
-        <div className="flex space-x-3 md:w-[40%]">
+        <div className="flex space-x-3 lg:w-[40%]">
           <div className="flex flex-col space-y-3 [&>*]:text-sm w-full">
             <span>Home</span>
             <span>Series</span>
