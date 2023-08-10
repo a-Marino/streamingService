@@ -10,7 +10,7 @@ import {
 
 export const FooterLogoLang = () => {
   return (
-    <div className="flex items-center space-x-10 ">
+    <div className="flex items-center space-x-10">
       <FlixTVLogo className="w-56" />
       <button className="w-full bg-lightGray md:bg-neutral-800 py-2 rounded-lg flex items-center space-x-10 md:space-x-5 px-3 ">
         <UsaFlagIcon />
@@ -35,6 +35,13 @@ export const FooterCopyright = ({ className }) => {
 };
 
 export const FooterNews = () => {
+  const handleGoTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  };
+
   return (
     <div className="flex space-x-2 md:space-x-3">
       <div className="flex flex-col bg-mainGreen w-full rounded-xl p-3 text-black">
@@ -53,17 +60,20 @@ export const FooterNews = () => {
           </button>
         </div>
       </div>
-      <div className="flex flex-col w-[25%] md:w-[20%] border border-neutral-600 rounded-xl p-2 items-center justify-center hover:bg-neutral-600 transition-colors duration-150 ease-in-out [&>*]:hover:text-black [&>*]:hover:fill-black cursor-pointer">
+      <button
+        onClick={handleGoTop}
+        className="flex flex-col w-[25%] md:w-[20%] border border-neutral-600 rounded-xl p-2 items-center justify-center hover:bg-neutral-600 transition-colors duration-150 ease-in-out [&>*]:hover:text-black [&>*]:hover:fill-black cursor-pointer"
+      >
         <span className="text-neutral-600 text-sm font-semibold">UP</span>
         <UpArrowIcon className={"fill-neutral-500 justify-self-end"} />
-      </div>
+      </button>
     </div>
   );
 };
 
 export const Footer = () => {
   return (
-    <footer className="mb-5 md:bg-lightGray md:px-2 md:py-8 md:mx-5 md:rounded-xl">
+    <footer className="mb-5 md:bg-lightGray md:px-2 md:py-8 md:mx-10 md:rounded-xl">
       <div className="flex flex-col lg:flex-row lg:space-x-24 mx-5 space-y-5 mb-5 border-b border-neutral-800 pb-5">
         <div className="md:flex flex-col">
           <FooterLogoLang />

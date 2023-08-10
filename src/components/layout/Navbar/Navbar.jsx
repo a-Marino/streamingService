@@ -5,6 +5,7 @@ import { NavMenu } from "../../common/Nav/NavMenu";
 import { ProfileBox } from "../../common/Nav/ProfileBox";
 import { ButtonWhite } from "../../common/Button";
 import classNames from "classnames";
+import { motion } from "framer-motion";
 
 export const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -25,7 +26,7 @@ export const Navbar = () => {
     <header
       className={classNames("z-[1] md:absolute md:top-0 w-full", !isOpen ? "" : "fixed bg-bgColor")}
     >
-      <div className={!isOpen ? "" : "flex flex-col h-screen md:h-auto overflow-auto"}>
+      <div className={!isOpen ? "w-full" : "flex flex-col h-screen md:h-auto overflow-auto"}>
         <nav className="flex flex-row justify-between items-center px-5 md:px-10 py-10 md:py-5 bg-transparent ">
           <FlixTVLogo className="hidden md:block" />
           <FlixTVLogoSm className="md:hidden" />
@@ -50,7 +51,13 @@ export const Navbar = () => {
           </button>
         </nav>
         {isOpen && (
-          <div className="w-full bg-bgColor z-[1] flex flex-col items-center px-5 md:hidden ">
+          <motion.div
+            initial={{ opacity: 0, y: -100 }}
+            animate={{ opacity: 1, y: 0 }}
+            exit={{ opacity: 0, y: -100 }}
+            transition={{ duration: 0.3 }}
+            className="w-full bg-bgColor z-[1] flex flex-col items-center px-5 md:hidden "
+          >
             {/* Profile box */}
             <ProfileBox />
             {/* MENU */}
@@ -60,7 +67,7 @@ export const Navbar = () => {
               <FooterLogoLang />
               <FooterCopyright />
             </div>
-          </div>
+          </motion.div>
         )}
       </div>
     </header>
