@@ -3,14 +3,14 @@ import { ButtonGreen, ButtonWhite } from "../Button";
 
 const Basic = () => {
   return (
-    <div className="bg-neutral-50 rounded-xl p-3 md:p-8 flex flex-col text-black space-y-2 md:w-[60%]">
+    <div className="flex flex-col space-y-2 rounded-xl bg-neutral-50 p-3 text-black md:w-[60%] md:p-8">
       <div className="flex flex-col space-y-2 border-b border-neutral-500/50 pb-2 md:pb-5">
-        <span className="font-bold border border-black rounded-full flex items-center justify-center w-[45%]">
+        <span className="flex w-[45%] items-center justify-center rounded-full border border-black font-bold">
           BASIC
         </span>
         <p className="font-semibold">A great choice for dating</p>
       </div>
-      <ul className="text-sm space-y-1 md:space-y-5 border-b border-neutral-500/50 pb-3 pt-1 md:pt-3 md:pb-6">
+      <ul className="space-y-1 border-b border-neutral-500/50 pb-3 pt-1 text-sm md:space-y-5 md:pb-6 md:pt-3">
         <TickList>
           Access to <span className="font-semibold">movies</span> and series
         </TickList>
@@ -22,12 +22,13 @@ const Basic = () => {
           Video quality <span className="font-semibold">1080p</span>
         </TickList>
         <TickList>
-          Up to <span className="font-semibold">2 accounts online</span> at the sime time
+          Up to <span className="font-semibold">2 accounts online</span> at the
+          sime time
         </TickList>
       </ul>
       <div className="flex md:py-8">
         <div className="w-[150%] md:w-[200%]">
-          <span className="font-bold text-xl">9.99$</span> / Month
+          <span className="text-xl font-bold">9.99$</span> / Month
         </div>
         <ButtonGreen>START NOW</ButtonGreen>
       </div>
@@ -37,15 +38,17 @@ const Basic = () => {
 
 const Platinum = () => {
   return (
-    <div className="bg-mainGreen rounded-xl p-3 md:p-8 flex flex-col text-neutral-50 space-y-2 md:w-full">
+    <div className="flex flex-col space-y-2 rounded-xl bg-mainGreen p-3 text-neutral-50 md:w-full md:p-8">
       <div className="flex flex-col space-y-2 border-b border-neutral-100/50 pb-2 md:pb-5">
-        <span className="font-bold border border-neutral-50 rounded-full flex items-center justify-center w-[50%] md:w-[30%]">
+        <span className="flex w-[50%] items-center justify-center rounded-full border border-neutral-50 font-bold md:w-[30%]">
           PLATINUM
         </span>
-        <p className="font-semibold">The most popular and profitable subscription</p>
+        <p className="font-semibold">
+          The most popular and profitable subscription
+        </p>
       </div>
-      <div className="md:flex md:border-b border-neutral-100/50 md:space-x-10 md:pb-3 md:pt-3">
-        <ul className="text-sm space-y-1 md:space-y-5 pt-1 ">
+      <div className="border-neutral-100/50 md:flex md:space-x-10 md:border-b md:pb-3 md:pt-3">
+        <ul className="space-y-1 pt-1 text-sm md:space-y-5 ">
           <TickList>
             Access to <span className="font-semibold">movies</span> and series
           </TickList>
@@ -60,27 +63,32 @@ const Platinum = () => {
             Video quality <span className="font-semibold">Ultra HD 4k</span>
           </TickList>
         </ul>
-        <ul className="text-sm space-y-1 md:space-y-5 md:border-0 border-b border-neutral-100/50 pb-3 pt-2 md:pt-0">
+        <ul className="space-y-1 border-b border-neutral-100/50 pb-3 pt-2 text-sm md:space-y-5 md:border-0 md:pt-0">
           <TickList>
-            Up to <span className="font-semibold">5 accounts online</span> at the sime time
+            Up to <span className="font-semibold">5 accounts online</span> at
+            the sime time
           </TickList>
           <TickList>
-            Cumulative <span className="font-semibold">bonuses</span> every month
+            Cumulative <span className="font-semibold">bonuses</span> every
+            month
           </TickList>
           <TickList>
-            Cumulative <span className="font-semibold">bonuses</span> every month
+            Cumulative <span className="font-semibold">bonuses</span> every
+            month
           </TickList>
           <TickList>
-            Cumulative <span className="font-semibold">bonuses</span> every month
+            Cumulative <span className="font-semibold">bonuses</span> every
+            month
           </TickList>
           <TickList>
-            Cumulative <span className="font-semibold">bonuses</span> every month
+            Cumulative <span className="font-semibold">bonuses</span> every
+            month
           </TickList>
         </ul>
       </div>
       <div className="flex md:py-8">
         <div className="w-[150%] md:w-[300%]">
-          <span className="font-bold text-xl">19.99$</span> / Month
+          <span className="text-xl font-bold">19.99$</span> / Month
         </div>
         <ButtonWhite>START NOW</ButtonWhite>
       </div>
@@ -90,7 +98,7 @@ const Platinum = () => {
 
 export const Plans = () => {
   return (
-    <div className="flex flex-col md:flex-row space-y-2 md:space-y-0 md:space-x-2 mt-10 lg:mt-0">
+    <div className="mt-10 flex flex-col space-y-2 md:flex-row md:space-x-2 md:space-y-0 lg:mt-0">
       <Basic />
       <Platinum />
     </div>

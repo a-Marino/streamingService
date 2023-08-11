@@ -1,14 +1,14 @@
 export const ProfileBox = () => {
   return (
-    <div className="flex space-x-2 bg-lightGray p-3 rounded-lg w-[100%]">
+    <div className="flex w-[100%] space-x-2 rounded-lg bg-lightGray p-3">
       {/* Profile IMG */}
-      <div className="bg-yellow-200 flex justify-center w-16 items-center rounded-lg text-black font-semibold text-2xl">
+      <div className="flex w-16 items-center justify-center rounded-lg bg-yellow-200 text-2xl font-semibold text-black">
         A
       </div>
       <div className="flex flex-col">
         <span className="text-sm">Andres Marino</span>
         <span className="text-xs">andresmarinolaiolo@hotmail.com</span>
-        <span className="text-sm border border-white rounded-full text-center w-24 mt-2">
+        <span className="mt-2 w-24 rounded-full border border-white text-center text-sm">
           BASIC
         </span>
       </div>

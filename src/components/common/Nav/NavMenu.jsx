@@ -1,9 +1,16 @@
 import { ButtonNav } from "./ButtonNav";
-import { AboutIcon, CinemaIcon, HomeIcon, SeriesIcon, TvIcon, LogOutIcon } from "../Icons/Icons";
+import {
+  AboutIcon,
+  CinemaIcon,
+  HomeIcon,
+  SeriesIcon,
+  TvIcon,
+  LogOutIcon,
+} from "../Icons/Icons";
 
 export const NavMenu = () => {
   return (
-    <div className="flex flex-col border-y-2 border-lightGray w-full my-5 py-3 space-y-3">
+    <div className="my-5 flex w-full flex-col space-y-3 border-y-2 border-lightGray py-3">
       <ButtonNav>
         <HomeIcon className={"fill-neutral-50 group-hover:fill-mainGreen"} />
         <span>Home</span>
