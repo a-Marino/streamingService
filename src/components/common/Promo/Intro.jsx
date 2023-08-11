@@ -4,23 +4,24 @@ import { ButtonWhite } from "../Button";
 
 export const Intro = () => {
   return (
-    <div className="md:min-h-screen flex flex-col lg:flex-row md:justify-center md:items-center md:mt-10 lg:mt-0">
+    <div className="flex flex-col md:mt-10 md:min-h-screen md:items-center md:justify-center lg:mt-0 lg:flex-row">
       <SliderMovies />
-      <div className="flex flex-col space-y-3 md:space-y-5 py-5 mt-5 lg:order-first md:w-[75%]">
+      <div className="mt-5 flex flex-col space-y-3 py-5 md:w-[75%] md:space-y-5 lg:order-first">
         <h1 className="text-xl md:text-2xl">
           Escape
-          <span className="border border-neutral-50 rounded-full py-1 px-3 mx-2 relative -top-3">
+          <span className="relative -top-3 mx-2 rounded-full border border-neutral-50 px-3 py-1">
             reality
           </span>
-          with our exclusive <span className="text-mainGreen font-semibold">movie collection</span>
+          with our exclusive{" "}
+          <span className="font-semibold text-mainGreen">movie collection</span>
         </h1>
-        <p className="text-xs md:text-sm text-neutral-400">
-          Watch full seasons of exclusively streaming series, current-season episodes, hit movies,
-          TV Shows, kids shows, and more.
+        <p className="text-xs text-neutral-400 md:text-sm">
+          Watch full seasons of exclusively streaming series, current-season
+          episodes, hit movies, TV Shows, kids shows, and more.
         </p>
-        <div className="flex space-x-2 w-[80%]">
+        <div className="flex w-[80%] space-x-2">
           <ButtonWhite>START NOW</ButtonWhite>
-          <button className="w-full border border-mainGreen py-1 px-4 rounded-full flex justify-center items-center">
+          <button className="flex w-full items-center justify-center rounded-full border border-mainGreen px-4 py-1">
             <PlayIcon />
           </button>
         </div>

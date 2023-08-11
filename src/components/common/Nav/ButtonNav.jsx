@@ -1,6 +1,6 @@
 export const ButtonNav = ({ children }) => {
   return (
-    <button className="hover:bg-lightGray rounded-full py-2 px-5 flex items-start space-x-5 group">
+    <button className="group flex items-start space-x-5 rounded-full px-5 py-2 hover:bg-lightGray">
       {children}
     </button>
   );
